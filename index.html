@@ -1,1 +1,155 @@
-under dev
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Haxima - Penetration Tester</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style>
+		body, html {
+			font-family: 'Inter', Arial, Helvetica, sans-serif;
+			background: #FFFFF0;
+		}
+        #critical {
+			background: #fee2e2;
+			color: #b91c1c;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+		#high {
+			background: #fef9c3;
+			color: #ca8a04;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+		#medium {
+			background: #dbeafe;
+			color: #1d4ed8;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+		#low {
+			background: #dcfce7;
+			color: #166534;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+		#severity {
+			background: #e5e7eb;
+			color: #374151;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+		#count {
+			background: #f3f4f6;
+			color: #4b5563;
+			border-radius: 0.375rem;
+			padding: 2px 8px;
+			font-size: 0.95em;
+		}
+	</style>
+</head>
+<body>
+	<div style="display: flex; flex-direction: column; align-items: center; min-height: 100vh;">
+			<!-- Search Form -->
+			<form style="margin-top: 60px; width: 100%; max-width: 900px; display: flex; flex-direction: column; align-items: flex-start;">
+				<input type="text" disabled placeholder="Who Haxima?" style="width: 100%; padding: 16px 20px; font-size: 1.2rem; border-radius: 24px; border: 1px solid #e0e0e0; outline: none; background: #FFFFF0; font-family: 'Helvetica Now Text', Arial, sans-serif;">
+			</form>
+
+			<!-- Navbar -->
+			<nav style="margin: 32px 0 24px 0; width: 100%; max-width: 800px;">
+				<ul style="display: flex; gap: 24px; list-style: none; padding: 0; margin: 0; font-size: 1rem; font-weight: 400;">
+					<li><a href="#intro" style="text-decoration: none; color: #222;">Intro</a></li>
+					<li><a href="#achievement" style="text-decoration: none; color: #222;">Achievement</a></li>
+					<li><a href="#advisories" style="text-decoration: none; color: #222;">Advisories</a></li>
+					<li><a href="#happy-to-secure" style="text-decoration: none; color: #222;">Happy To Secure</a></li>
+					<li><a href="#blog" style="text-decoration: none; color: #222;">Blog</a></li>
+					<li><a href="#community" style="text-decoration: none; color: #222;">Community</a></li>
+					<li><a href="#project" style="text-decoration: none; color: #222;">Project</a></li>
+					<li><a href="#contact" style="text-decoration: none; color: #222;">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Name and Profile -->
+			<div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 32px; max-width:800px; width: 100%;">
+				<span style="font-size: 2.2rem; font-weight: 700; margin-bottom: 12px;">Haxima</span>
+				<img src="" alt="Profile Photo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; background: #eee; margin-bottom: 12px;">
+			</div>
+
+			<!-- Sections -->
+			<main style="width: 100%; max-width: 800px;">
+				<section id="intro" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Intro</h2>
+					<p style="font-size: 1rem; font-weight: 400; color: #444;">Hacking Hackers hackerone badge<sup class="bg-blue-100 text-blue-800 rounded px-2 py-0.5 text-xs align-top">[<a target="_blank" href="https://hackerone.com/xklepxn/badges?type=user" class="underline">?</a>]</sup>; Troublemaker huntr.dev badge ; eJPT; CAP; CMPen; CAPen; CVE-2024-35191; CVE-2023-47636; Also Interest in Android Developer; and Laravel Web dev experience.</p>
+				</section>
+				<section id="achievement" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Achievement</h2>
+					<p style="font-size: 1rem; font-weight: 400; color: #444;">[content of the achievement]</p>
+				</section>
+				<section id="advisories" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Advisories <sup class="bg-blue-100 text-blue-800 rounded px-2 py-0.5 text-xs align-top">[<a target="_blank" href="https://github.com/advisories?query=credit%3Axcapri" class="underline">?</a>]</sup></h2>
+					<ul style="font-size: 1rem; font-weight: 400; color: #444; margin: 0; padding-left: 20px;">
+						<li>CVE-2024-35191 - Server Side Template Injection on formie (forms plugin for Craft CMS).</li>
+						<li>CVE-2023-47636 - Full Path Disclosure via re-export document on pimcore/admin-ui-classic-bundle.</li>
+					</ul>
+				</section>
+				<section id="happy-to-secure" style="margin-bottom: 40px;">
+								<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Happy To Secure (50)</h2>
+											<ul id="secure-list" class="text-base font-normal text-gray-700 ml-5">
+												<li>[Company Name] [reward] - <span id="severity">severity</span> <span id="count">count bug</span></li>
+												<li>Bank Redacted $10k - <span id="high">High (3)</span>; <span id="critical">Critical (2)</span>; </li>
+												<li>Company A $2k - <span id="medium">Medium (4)</span></li>
+												<li>Company B $1k - <span id="low">Low (5)</span></li>
+												<li>Company C $500 - <span id="high">High (1)</span></li>
+												<li>Company D $300 - <span id="critical">Critical (1)</span></li>
+												<li>Company E $200 - <span id="medium">Medium (2)</span></li>
+												<li>Company F $100 - <span id="low">Low (3)</span></li>
+		
+											</ul>
+								<button id="toggle-secure-list" style="margin-top: 10px; font-size: 0.95rem; padding: 6px 16px; border-radius: 8px; border: 1px solid #e0e0e0; background: #f5f5f5; cursor: pointer;">Tampilkan Semua</button>
+								
+				</section>
+				<section id="blog" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Blog</h2>
+					<p style="font-size: 1rem; font-weight: 400; color: #444;">[content of the blog]</p>
+				</section>
+				<section id="community" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Community</h2>
+					<p style="font-size: 1rem; font-weight: 400; color: #444;">[content of the community]</p>
+				</section>
+				<section id="project" style="margin-bottom: 40px;">
+					<h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Project</h2>
+					<p style="font-size: 1rem; font-weight: 400; color: #444;">[content of the project]</p>
+				</section>
+                <section id="contact" style="margin-bottom: 40px;">
+                    <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">Contact</h2>
+                    <p style="font-size: 1rem; font-weight: 400; color: #444;">[content of the contact]</p>
+			</main>
+		</div>
+
+
+     <script>
+			const secureList = document.getElementById('secure-list');
+			const toggleBtn = document.getElementById('toggle-secure-list');
+			const items = Array.from(secureList.children);
+			let expanded = false;
+			function updateList() {
+				items.forEach((li, idx) => {
+						li.style.display = expanded || idx < 7 ? '' : 'none';
+					});
+					toggleBtn.textContent = expanded ? 'Sembunyikan' : 'Tampilkan Semua';
+				}
+			    toggleBtn.addEventListener('click', () => {
+										expanded = !expanded;
+										updateList();
+									});
+            updateList();
+	</script>   
+</body>
+</html>
